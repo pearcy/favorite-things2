@@ -16,9 +16,16 @@ $(document).ready(function() {
 
     let favorites =[color, band, movie, flavor, planet];
 
-    console.log(favorites);
+    favorites.forEach(function(fav) {
+      // console.log(fav);
+      $("#output").append('<ul>'  + fav + '</ul>');
+    });
 
-    $(".favorites").text(favorites);
+    // console.log(favorites);
+
+    // $(".favorites").text(favorites);
+
+    $('#output').show();
 
 
     // $(".color").text(color);
@@ -26,13 +33,6 @@ $(document).ready(function() {
     // $(".movie").text(movie);
     // $(".flavor").text(flavor);
     // $(".planet").text(planet);
-
-   
-
-
-    $('#output').show();
-
-
 
 
   });
