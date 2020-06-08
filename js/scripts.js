@@ -8,20 +8,24 @@ $(document).ready(function() {
     let planet = $("input#planet").val();
 
 
-    console.log(color);
-    console.log(band);
-    console.log(movie);
-    console.log(flavor);
-    console.log(planet);
+    // console.log(color);
+    // console.log(band);
+    // console.log(movie);
+    // console.log(flavor);
+    // console.log(planet);
 
-    let favAnswers =[color]
+    let favorites =[color, band, movie, flavor, planet];
+
+    console.log(favorites);
+
+    $(".favorites").text(favorites);
 
 
-    $(".color").text(color);
-    $(".band").text(band);
-    $(".movie").text(movie);
-    $(".flavor").text(flavor);
-    $(".planet").text(planet);
+    // $(".color").text(color);
+    // $(".band").text(band);
+    // $(".movie").text(movie);
+    // $(".flavor").text(flavor);
+    // $(".planet").text(planet);
 
    
 
