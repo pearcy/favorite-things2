@@ -7,13 +7,14 @@ $(document).ready(function() {
     let flavor = $("input#flavor").val();
     let planet = $("input#planet").val();
 
-    // I am missing the value in the html form so there is no console.log output
 
     console.log(color);
     console.log(band);
     console.log(movie);
     console.log(flavor);
     console.log(planet);
+
+    let favAnswers =[color]
 
 
     $(".color").text(color);
