@@ -15,17 +15,23 @@ $(document).ready(function() {
     // console.log(planet);
 
     let favorites =[color, band, movie, flavor, planet];
+    let fav2 = [];
 
     favorites.forEach(function(fav) {
       // console.log(fav);
-      $("#output").append('<ul>'  + fav + '</ul>');
+      // $("#output").append('<ul>'  + fav + '</ul>');
+      fav2.push(fav);
+     
+
     });
 
     // console.log(favorites);
+      console.log(fav2);
 
     // $(".favorites").text(favorites);
-
-    $('#output').show();
+    
+    // $('#output').show();
+    $("#output").append('<ul>'  + fav2 + '</ul>');
 
 
     // $(".color").text(color);
